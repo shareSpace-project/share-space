@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body,
+button,
+input,
+textarea {
+  font-family: Roboto, Arial, PingFangSC-Regular, 'Microsoft YaHei', sans-serif !important;
+  font-feature-settings: 'tnum';
+}
+
+input[type='number'] {
+  font-feature-settings: 'tnum';
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+  }
+}

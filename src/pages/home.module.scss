@@ -1,0 +1,60 @@
+.app {
+  height: 100vh;
+  background: url('../assets/bg.png') no-repeat left -160px top;
+  background-color: #ebecee;
+  background-size: 1100px;
+
+  h1 {
+    position: absolute;
+    top: 160px;
+    left: 280px;
+    font-family: Jua, sans-serif;
+    font-size: 80px;
+    line-height: 85px;
+    color: #fefefe;
+    letter-spacing: 2px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    padding-top: 500px;
+    margin: 0 auto;
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 1000px;
+
+      li {
+        width: 150px;
+        height: 150px;
+        background: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+
+        &:first-child {
+          background: url('../assets/aa.webp') no-repeat left -80px top -378px;
+        }
+
+        &:nth-child(2) {
+          background: url('../assets/bb.jpg') no-repeat left -120px top -300px;
+        }
+
+        &:nth-child(3) {
+          background: url('../assets/uiicons4.webp') no-repeat left -390px center;
+        }
+
+        &:nth-child(4) {
+          background: url('../assets/uiicons4.webp') no-repeat left -530px center;
+        }
+
+        &:last-child {
+          background: url('../assets/uiicons4.webp') no-repeat left -115px top -360px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@use '/src/styles/mixins/flexbox';
+@use '/src/styles/constants/colors';
+
+.main {
+  min-height: calc(100vh - 70px);
+}

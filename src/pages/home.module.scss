@@ -1,32 +1,36 @@
+@use '/src/styles/mixins/flexbox';
+
 .homeWrap {
+  position: relative;
   height: 100vh;
-  background: url('../assets/bg.png') no-repeat left -160px top;
+  background: url('../assets/bg.png') no-repeat left -90px top;
   background-color: #ebecee;
   background-size: 1100px;
 
-  h2 {
-    position: absolute;
-    top: 160px;
-    left: 280px;
-    font-family: Jua, sans-serif;
-    font-size: 80px;
-    line-height: 85px;
-    color: #fefefe;
-    letter-spacing: 2px;
-  }
-
   .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     width: 1200px;
-    padding-top: 500px;
+    height: 100%;
+    padding: 170px 0;
     margin: 0 auto;
 
-    .box {
+    h2 {
+      position: absolute;
+      left: 360px;
+      font-family: Jua, sans-serif;
+      font-size: 80px;
+      line-height: 85px;
+      color: #fefefe;
+      letter-spacing: 2px;
+    }
+
+    .categoryWrap {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 1000px;
+      padding: 0 100px;
+      margin-top: 300px;
 
       li {
         width: 150px;
@@ -36,29 +40,34 @@
         border-radius: 6px;
         box-shadow: 0 5px 26px 0 rgba(138 124 153 / 22%);
 
-        dl {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+        button {
           width: 100%;
           height: 100%;
 
-          dt {
-            width: 50px;
-            margin-bottom: 10px;
+          dl {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
 
-            svg {
-              width: 100%;
-              height: 100%;
-              fill: #4230e6;
+            dt {
+              width: 50px;
+              margin-bottom: 10px;
+
+              svg {
+                width: 100%;
+                height: 100%;
+                fill: #4230e6;
+              }
             }
-          }
 
-          dd {
-            font-family: 'Noto Sans KR', sans-serif;
-            font-size: 16px;
-            letter-spacing: 2px;
+            dd {
+              font-family: 'Noto Sans KR', sans-serif;
+              font-size: 16px;
+              letter-spacing: 2px;
+            }
           }
         }
       }

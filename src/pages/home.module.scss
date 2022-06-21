@@ -1,10 +1,10 @@
-.app {
+.homeWrap {
   height: 100vh;
   background: url('../assets/bg.png') no-repeat left -160px top;
   background-color: #ebecee;
   background-size: 1100px;
 
-  h1 {
+  h2 {
     position: absolute;
     top: 160px;
     left: 280px;
@@ -33,26 +33,33 @@
         height: 150px;
         background: #ffffff;
         border: 1px solid #dddddd;
-        border-radius: 4px;
+        border-radius: 6px;
+        box-shadow: 0 5px 26px 0 rgba(138 124 153 / 22%);
 
-        &:first-child {
-          background: url('../assets/aa.webp') no-repeat left -80px top -378px;
-        }
+        dl {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
 
-        &:nth-child(2) {
-          background: url('../assets/bb.jpg') no-repeat left -120px top -300px;
-        }
+          dt {
+            width: 50px;
+            margin-bottom: 10px;
 
-        &:nth-child(3) {
-          background: url('../assets/uiicons4.webp') no-repeat left -390px center;
-        }
+            svg {
+              width: 100%;
+              height: 100%;
+              fill: #4230e6;
+            }
+          }
 
-        &:nth-child(4) {
-          background: url('../assets/uiicons4.webp') no-repeat left -530px center;
-        }
-
-        &:last-child {
-          background: url('../assets/uiicons4.webp') no-repeat left -115px top -360px;
+          dd {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+          }
         }
       }
     }

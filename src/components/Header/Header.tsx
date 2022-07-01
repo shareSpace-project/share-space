@@ -9,7 +9,7 @@ const Header = () => {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <NavLink to='/signin'>로그인</NavLink>
+              <NavLink to='/login'>로그인</NavLink>
             </li>
             <li>
               <NavLink to='/signup'>회원가입</NavLink>
